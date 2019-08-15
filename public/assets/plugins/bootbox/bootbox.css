@@ -1,0 +1,16 @@
+.btn {
+    font-size: 11px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    outline: none;
+    -webkit-transition: 0.15s linear;
+    transition: 0.15s linear;
+}
+.modal-backdrop {
+	background-color: rgb(34, 34, 34);
+ }
+ .btn-xs{
+	font-size: 10px !important;
+    font-weight: bold;
+    padding: 2px 5px 2px 5px;
+ }
