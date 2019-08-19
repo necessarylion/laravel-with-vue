@@ -7,6 +7,8 @@
     export default {
       
         name: 'home',
+        mounted() {
+        }
     }
     
 </script>
