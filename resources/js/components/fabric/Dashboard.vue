@@ -1,8 +1,13 @@
 <template>
+
     <div class="row gap-20 masonry pos-r">
-            <div class="masonry-sizer col-md-6"></div>
-            <div class="masonry-item w-100">
+    <div class="masonry-sizer col-md-6"></div>
+      <!-- mansonary item  -->
+      <div class="masonry-item w-100">
+
+              <!-- gap -->
               <div class="row gap-20">
+
                 <div class="col-md-3">
                   <div class="layers bd bgc-white p-20">
                     <div class="layer w-100">
@@ -15,6 +20,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="col-md-3">
                   <div class="layers bd bgc-white p-20">
                     <div class="layer w-100 mB-10">
@@ -28,6 +34,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="col-md-3">
                   <div class="layers bd bgc-white p-20">
                     <div class="layer w-100 mB-10">
@@ -40,6 +47,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="col-md-3">
                   <div class="layers bd bgc-white p-20">
                     <div class="layer w-100 mB-10">
@@ -53,6 +61,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="col-md-6">
                   <div class="layers bd bgc-white p-20">
                     <div class="layer w-100">
@@ -82,6 +91,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="col-md-3">
                   <div class="layers bd bgc-white p-20">
                     <div class="layer w-100 mB-15">
@@ -94,6 +104,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="col-md-3">
                   <div class="layers bd bgc-white p-20">
                     <div class="layer w-100 mB-10 mT-15">
@@ -101,33 +112,85 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="masonry-item col-md-12">
                   <div class="bgc-white p-20 bd">
                     <h4 class="c-grey-900 text-center">Inventory Usage by Month</h4>
                     <div class="mT-30 p-20"><canvas id="bar-chart" height="220"></canvas></div>
                   </div>
                 </div>
+
               </div>
-            </div>
-            <div class="masonry-item w-100">
-              <div class="row">
-                <div class="col-md-3"><button class="btn-lg btn-block">View Fabric Listings</button></div>
-                <div class="col-md-2"><button class="btn-lg btn-block">Place New Order</button></div>
-                <div class="col-md-2"><button class="btn-lg btn-block">Manage Order</button></div>
-                <div class="col-md-2"><button class="btn-lg btn-block">Suppliers</button></div>
-                <div class="col-md-3"><button class="btn-lg btn-block">Withdraw Fabric Roll</button></div>
-              </div>
-            </div>
+
+              <!-- gap -->
+
+        </div>
+        <!-- mansonary item  -->
+        
+        <!-- mansonary item  -->
+        <div class="masonry-item w-100">
+          <div class="row">
+            <div class="col-md-3"><button class="btn-lg btn-block">View Fabric Listings</button></div>
+            <div class="col-md-2"><button class="btn-lg btn-block">Place New Order</button></div>
+            <div class="col-md-2"><button class="btn-lg btn-block">Manage Order</button></div>
+            <div class="col-md-2"><button class="btn-lg btn-block">Suppliers</button></div>
+            <div class="col-md-3"><button class="btn-lg btn-block">Withdraw Fabric Roll</button></div>
           </div>
+        </div>
+        <!-- mansonary item  -->
+
+  </div>
+
+
 </template>
 
 <script>
 
+    import Chart from 'chart.js'
     export default {
       
-     
+     mounted(){
+            var ctx = $('#bar-chart');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+     }
     }
     
+ 
 </script>
 
 <style scoped>

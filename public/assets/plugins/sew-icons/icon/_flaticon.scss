@@ -1,0 +1,160 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 20/08/2019 04:59
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-fashion:before { content: "\f100"; }
+.flaticon-clipboard:before { content: "\f101"; }
+.flaticon-package:before { content: "\f102"; }
+.flaticon-giftbox:before { content: "\f103"; }
+.flaticon-gift-box:before { content: "\f104"; }
+.flaticon-cloth-buttons:before { content: "\f105"; }
+.flaticon-sewing-machine:before { content: "\f106"; }
+.flaticon-sewing-machine-1:before { content: "\f107"; }
+.flaticon-clothes-hanger:before { content: "\f108"; }
+.flaticon-old-sewing-machine:before { content: "\f109"; }
+.flaticon-t-shirt:before { content: "\f10a"; }
+.flaticon-four-buttons:before { content: "\f10b"; }
+.flaticon-pin-sew:before { content: "\f10c"; }
+.flaticon-sewing-thread:before { content: "\f10d"; }
+.flaticon-ball-of-yarn:before { content: "\f10e"; }
+.flaticon-jeans-pocket:before { content: "\f10f"; }
+.flaticon-mannequin:before { content: "\f110"; }
+.flaticon-sewing-needles:before { content: "\f111"; }
+.flaticon-thimble:before { content: "\f112"; }
+.flaticon-needle:before { content: "\f113"; }
+.flaticon-open-scissors:before { content: "\f114"; }
+.flaticon-shirt:before { content: "\f115"; }
+.flaticon-shirt-1:before { content: "\f116"; }
+.flaticon-store:before { content: "\f117"; }
+.flaticon-store-1:before { content: "\f118"; }
+.flaticon-qr-code:before { content: "\f119"; }
+.flaticon-barcode:before { content: "\f11a"; }
+.flaticon-fingerprint:before { content: "\f11b"; }
+.flaticon-scan:before { content: "\f11c"; }
+.flaticon-barcode-1:before { content: "\f11d"; }
+.flaticon-barcode-2:before { content: "\f11e"; }
+.flaticon-quality:before { content: "\f11f"; }
+.flaticon-diploma:before { content: "\f120"; }
+.flaticon-quality-1:before { content: "\f121"; }
+.flaticon-policy:before { content: "\f122"; }
+.flaticon-shield:before { content: "\f123"; }
+.flaticon-security:before { content: "\f124"; }
+.flaticon-rug:before { content: "\f125"; }
+.flaticon-tissue:before { content: "\f126"; }
+.flaticon-fabric:before { content: "\f127"; }
+.flaticon-mat:before { content: "\f128"; }
+.flaticon-cork:before { content: "\f129"; }
+.flaticon-layers:before { content: "\f12a"; }
+.flaticon-prints:before { content: "\f12b"; }
+.flaticon-scarf:before { content: "\f12c"; }
+.flaticon-scarf-1:before { content: "\f12d"; }
+.flaticon-scarf-2:before { content: "\f12e"; }
+.flaticon-tracking:before { content: "\f12f"; }
+.flaticon-box:before { content: "\f130"; }
+.flaticon-network:before { content: "\f131"; }
+.flaticon-employees:before { content: "\f132"; }
+.flaticon-employee:before { content: "\f133"; }
+.flaticon-planning:before { content: "\f134"; }
+.flaticon-gears:before { content: "\f135"; }
+.flaticon-conveyor:before { content: "\f136"; }
+.flaticon-route:before { content: "\f137"; }
+.flaticon-running-a-race:before { content: "\f138"; }
+.flaticon-finish-line-flag:before { content: "\f139"; }
+.flaticon-step:before { content: "\f13a"; }
+.flaticon-running-at-finish-line:before { content: "\f13b"; }
+    
+    $font-Flaticon-fashion: "\f100";
+    $font-Flaticon-clipboard: "\f101";
+    $font-Flaticon-package: "\f102";
+    $font-Flaticon-giftbox: "\f103";
+    $font-Flaticon-gift-box: "\f104";
+    $font-Flaticon-cloth-buttons: "\f105";
+    $font-Flaticon-sewing-machine: "\f106";
+    $font-Flaticon-sewing-machine-1: "\f107";
+    $font-Flaticon-clothes-hanger: "\f108";
+    $font-Flaticon-old-sewing-machine: "\f109";
+    $font-Flaticon-t-shirt: "\f10a";
+    $font-Flaticon-four-buttons: "\f10b";
+    $font-Flaticon-pin-sew: "\f10c";
+    $font-Flaticon-sewing-thread: "\f10d";
+    $font-Flaticon-ball-of-yarn: "\f10e";
+    $font-Flaticon-jeans-pocket: "\f10f";
+    $font-Flaticon-mannequin: "\f110";
+    $font-Flaticon-sewing-needles: "\f111";
+    $font-Flaticon-thimble: "\f112";
+    $font-Flaticon-needle: "\f113";
+    $font-Flaticon-open-scissors: "\f114";
+    $font-Flaticon-shirt: "\f115";
+    $font-Flaticon-shirt-1: "\f116";
+    $font-Flaticon-store: "\f117";
+    $font-Flaticon-store-1: "\f118";
+    $font-Flaticon-qr-code: "\f119";
+    $font-Flaticon-barcode: "\f11a";
+    $font-Flaticon-fingerprint: "\f11b";
+    $font-Flaticon-scan: "\f11c";
+    $font-Flaticon-barcode-1: "\f11d";
+    $font-Flaticon-barcode-2: "\f11e";
+    $font-Flaticon-quality: "\f11f";
+    $font-Flaticon-diploma: "\f120";
+    $font-Flaticon-quality-1: "\f121";
+    $font-Flaticon-policy: "\f122";
+    $font-Flaticon-shield: "\f123";
+    $font-Flaticon-security: "\f124";
+    $font-Flaticon-rug: "\f125";
+    $font-Flaticon-tissue: "\f126";
+    $font-Flaticon-fabric: "\f127";
+    $font-Flaticon-mat: "\f128";
+    $font-Flaticon-cork: "\f129";
+    $font-Flaticon-layers: "\f12a";
+    $font-Flaticon-prints: "\f12b";
+    $font-Flaticon-scarf: "\f12c";
+    $font-Flaticon-scarf-1: "\f12d";
+    $font-Flaticon-scarf-2: "\f12e";
+    $font-Flaticon-tracking: "\f12f";
+    $font-Flaticon-box: "\f130";
+    $font-Flaticon-network: "\f131";
+    $font-Flaticon-employees: "\f132";
+    $font-Flaticon-employee: "\f133";
+    $font-Flaticon-planning: "\f134";
+    $font-Flaticon-gears: "\f135";
+    $font-Flaticon-conveyor: "\f136";
+    $font-Flaticon-route: "\f137";
+    $font-Flaticon-running-a-race: "\f138";
+    $font-Flaticon-finish-line-flag: "\f139";
+    $font-Flaticon-step: "\f13a";
+    $font-Flaticon-running-at-finish-line: "\f13b";

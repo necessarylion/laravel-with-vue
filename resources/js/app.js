@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueProgressBar from 'vue-progressbar'
 
 import Routes from '@/routes.js';
+import '@/bootstrap.js';
 import App from '@/components/App';
 
 const options = {
@@ -18,7 +19,7 @@ const options = {
     inverse: false
   }
   
-  Vue.use(VueProgressBar, options)
+Vue.use(VueProgressBar, options)
 
 const app = new Vue({
     el: '#app',

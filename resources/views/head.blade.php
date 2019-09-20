@@ -1,56 +1,8 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <link href="{{ asset( 'assets/dist/css/style.css') }} " rel="stylesheet">
-<style>
-    #loader {
-      transition: all .3s ease-in-out;
-      opacity: 1;
-      visibility: visible;
-      position: fixed;
-      height: 100vh;
-      width: 100%;
-      background: #fff;
-      z-index: 90000
-    }
-
-    #loader.fadeOut {
-      opacity: 0;
-      visibility: hidden
-    }
-
-    .spinner {
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      top: calc(50% - 20px);
-      left: calc(50% - 20px);
-      background-color: #333;
-      border-radius: 100%;
-      -webkit-animation: sk-scaleout 1s infinite ease-in-out;
-      animation: sk-scaleout 1s infinite ease-in-out
-    }
-
-    @-webkit-keyframes sk-scaleout {
-      0% {
-        -webkit-transform: scale(0)
-      }
-
-      100% {
-        -webkit-transform: scale(1);
-        opacity: 0
-      }
-    }
-
-    @keyframes sk-scaleout {
-      0% {
-        -webkit-transform: scale(0);
-        transform: scale(0)
-      }
-
-      100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        opacity: 0
-      }
-    }
-
-  </style>
+<link href="{{ asset( 'assets/dist/css/loader.css') }} " rel="stylesheet">
+<link href="{{ asset( 'assets/plugins/font-awesome/css/font-awesome.min.css') }} " rel="stylesheet">
+<link href="{{ asset( 'assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }} " rel="stylesheet">
+<link href="{{ asset( 'assets/plugins/sew-icons/icon/flaticon.css') }} " rel="stylesheet">
+<link href="{{ asset( 'assets/plugins/themify-icons/themify-icons.css') }} " rel="stylesheet">
