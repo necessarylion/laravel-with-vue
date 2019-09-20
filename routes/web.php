@@ -13,6 +13,17 @@
 
 
 
+
+Route::any('/test',function() { 
+    
+    return 'this is test'; 
+});
+
+
 Route::get('/{all}',function () {
-        return view('app');
-    })->where('all', '.*');
+    return view('app');
+})->where('all', '.*')->name('404');;
+
+Route::get('/{all}',function () {
+    return view('app');
+})->where('all', '.*')->name('505');

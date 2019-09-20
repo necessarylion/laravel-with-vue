@@ -1,107 +1,56 @@
 <template>
-	
-<aside class="main-sidebar sidebar-light-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link navbar-primary">
-      <img src="/assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-           style="opacity: .8">
-      <span class="brand-text text-white text-uppercase">ADmin Lte</span>
-    </a>
+  <!-- sidebar   -->
+<div class="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-logo">
+          <div class="peers ai-c fxw-nw">
+            <div class="peer peer-greed"><a class="sidebar-link td-n" href="index.html">
+                <div class="peers ai-c fxw-nw">
+                  <div class="peer">
+                    <div class="logo"><img src="assets/static/images/logo.png" alt=""></div>
+                  </div>
+                  <div class="peer peer-greed">
+                    <h5 class="lh-1 mB-0 logo-text">Befeni</h5>
+                  </div>
+                </div>
+              </a></div>
+            <div class="peer">
+              <div class="mobile-toggle sidebar-toggle"><a href="" class="td-n"><i class="ti-arrow-circle-left"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="sidebar-menu scrollable pos-r">
+          <li class="nav-item dropdown"><a class="dropdown-toggle" href="javascript:void(0);"><span
+                class="icon-holder"><i class="c-orange-500 ti-layout-list-thumb"></i> </span><span
+                class="title">Fabrics</span> <span class="arrow"><i class="ti-angle-right"></i></span></a>
+            <ul class="dropdown-menu">
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-    
+                <li v-for="sidebar in fabric_sidebars">
+                  <router-link :to="{ name: sidebar.link_name }" class='sidebar-link'>{{sidebar.title}}</router-link>
+                </li>
 
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-			   
-    <li class="nav-header">ADMIN PANEL</li>
-    
-    <li class="nav-item">
-      <router-link to='/'
-         class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>
-              Dashboard
-            </p>
-     
-      </router-link>
-    </li>
-
-
-    <li class="nav-item has-treeview">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>
-              Inventory
-              <i class="right fas fa-angle-left"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="inventory/inventory.php" class="nav-link ">
-                <i class="far fa-circle text-danger nav-icon"></i>
-                <p>Overview</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="./index2.html" class="nav-link">
-                <i class="far fa-circle text-success nav-icon"></i>
-                <p>Inventory Summary</p>
-              </a>
-            </li>
-          </ul>
-    </li>
-          
-
-      <li class="nav-item">
-        <router-link to='/bar'
-        class="nav-link ">
-              <i class="nav-icon fas fa-folder-open"></i>
-              <p>
-                Order Document
-              </p>
-        
-        </router-link>
-      </li>
-
-      <li class="nav-item">
-            <a href="user-admin/index.php" class="nav-link ">
-              <i class="nav-icon fas fa-user"></i>
-              <p>
-                Admin
-              </p>
-            </a>
-      </li>
-
-
-    <li class="nav-item">
-          <a href="pages/widgets.html" class="nav-link">
-            <i class="nav-icon fas fa-users"></i>
-            <p>
-              User
-            </p>
-          </a>
-    </li>
-
-
-
-
-  		  
-  </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-  </aside>
-
-
+            </ul>
+          </li>
+        </ul>
+      </div>
+</div>
+<!-- sidebar   -->
 </template>
-
 
 <script>
 export default {
-  
+  data(){
+    return {
+        fabric_sidebars : [
+            { title : 'Dashboard' , link_name : 'fabric/dashboard' },
+            { title : 'List All Fabric' , link_name : 'fabric/lists' },
+            { title : 'Place Order' , link_name : 'fabric/create_order' },
+            { title : 'View Order' , link_name : 'fabric/view_order' },
+            { title : 'Withdraw Fabric Roll' , link_name : 'fabric/withdraw_roll' },
+            { title : 'Manage Suppliers' , link_name : 'fabric/suppliers' },
+        ]
+    }
+  }
 }
 </script>

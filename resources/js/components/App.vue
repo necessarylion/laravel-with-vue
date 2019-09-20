@@ -1,17 +1,17 @@
 <template>
 <div>
-    <Header />
-    <Sidebar />
-
-    <div class="content-wrapper">
-
-        <section class="content" style='padding-top: 10px;'>
-            <router-view />
-            <vue-progress-bar></vue-progress-bar>
-        </section>
-    </div> 
-    
-     <Footer />
+  
+<Sidebar />
+    <div class="page-container">
+        <Header />
+            <main class="main-content bgc-grey-100">
+                <div id="mainContent">
+                    <router-view />
+                    <vue-progress-bar></vue-progress-bar>
+                </div>
+            </main>
+        <Footer />
+    </div>
 </div>
     
 </template>

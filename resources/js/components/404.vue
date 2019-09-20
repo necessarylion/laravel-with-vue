@@ -1,15 +1,5 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-				<br>
-				<br>
-                <div class="card">
-                  <h1>404 Page Not Found</h1>
-                </div>
-            </div>
-        </div>
-    </div>
+    <h1 style='font-size:100px ; color: red;'>404</h1>
 </template>
 
 <script>
