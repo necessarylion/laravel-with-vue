@@ -26,7 +26,7 @@
                       <input type="password" v-model="formData.password" class="form-control form-control-lg" placeholder="Password" />
                     </div>
                     
-                    <button type="submit" class="btn btn-primary btn-block"> Login </button>
+                    <button type="submit" class="btn btn-primary btn-block" @click="login()"> Login </button>
                 
                 </div>
               </div>
@@ -50,8 +50,28 @@ export default {
             formData : {
                 username : null,
                 password : null
-            }
+            },
+            error : null
         }
+    },
+    async mounted() {
+    
+    },
+    methods : {
+      login() {
+        this.$auth.login({
+            data: this.formData, // Axios
+            rememberMe: true,
+            redirect: '/',
+            fetchUser: true
+        })
+        .then(() => {
+            console.log('success ' + this.context);
+        }, (res) => {
+            console.log('error ' + this.context);
+            this.error = res.data;
+        });
+      }
     }
 }
 </script>

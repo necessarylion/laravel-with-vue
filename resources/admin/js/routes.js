@@ -13,12 +13,14 @@ const  routes = [
       { path: 'inventory/create', component: render('app/pages/Inventory')  },
       { path: 'inventory/listing', component: render('app/pages/Inventory')  },
       { path: '', component: render('app/pages/Home')  },
-    ]
+    ],
+  
   },
 
   {
     path: '/login',
-    component: render('auth/Login')
+    component: render('auth/Login'),
+   
   },
 
   //for 404 page

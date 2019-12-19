@@ -11,6 +11,9 @@
       <link href="{{ asset( 'assets/css/demo_2/style.css' ) }} " rel="stylesheet">
       <link href="{{ asset( 'assets/vendors/iconfonts/mdi/css/materialdesignicons.css' ) }} " rel="stylesheet">
       <link href="{{ asset( 'assets/images/favicon.ico' ) }} " rel="shortcut icon">
+      <script>
+        window.apiBaseUrl = "{{ url('api/') }}";
+    </script>
 </head>
 <body class="header-fixed">
 

@@ -13,28 +13,15 @@
 
 Route::domain( env('ADMIN_SERVER') )->group(function () {
 
-    Route::get('/{all}', function () {
-        return view('admin');
-    })->where('all', '.*')->name('404');
-    Route::get('/{all}',function () {
-        return view('admin');
-    })->where('all', '.*')->name('505');
+    Route::get('/{all}', 'HomeController@viewAdmin')->where('all', '.*')->name('404');
+    Route::get('/{all}', 'HomeController@viewAdmin')->where('all', '.*')->name('505');
     
 });
 
 Route::domain( env('USER_SERVER') )->group(function () {
 
-    Route::get('/{all}',function () {
-        return view('app');
-    })->where('all', '.*')->name('404');
-    
-    Route::get('/{all}',function () {
-        return view('app');
-    })->where('all', '.*')->name('505');
+    Route::get('/{all}', 'HomeController@viewApp')->where('all', '.*')->name('404');
+    Route::get('/{all}', 'HomeController@viewApp')->where('all', '.*')->name('505');
     
 });
 
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
