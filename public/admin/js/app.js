@@ -2759,17 +2759,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      fromData: {
+      formData: {
         username: null,
         password: null
       }
@@ -35708,6 +35701,8 @@ var render = function() {
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-lg-5 col-md-7 col-sm-9 col-11 mx-auto" }, [
         _c("div", { staticClass: "grid" }, [
+          _vm._m(1),
+          _vm._v(" "),
           _c("div", { staticClass: "grid-body" }, [
             _c("div", { staticClass: "row" }, [
               _c(
@@ -35717,68 +35712,70 @@ var render = function() {
                     "col-lg-7 col-md-8 col-sm-9 col-12 mx-auto form-wrapper"
                 },
                 [
-                  _c("form", { attrs: { action: "#" } }, [
-                    _c("div", { staticClass: "form-group input-rounded" }, [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.username,
-                            expression: "username"
-                          }
-                        ],
-                        staticClass: "form-control form-control-lg",
-                        attrs: { type: "text", placeholder: "Username" },
-                        domProps: { value: _vm.username },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.username = $event.target.value
-                          }
+                  _c("div", { staticClass: "form-group input-rounded" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.formData.username,
+                          expression: "formData.username"
                         }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "form-group input-rounded" }, [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.password,
-                            expression: "password"
+                      ],
+                      staticClass: "form-control form-control-lg",
+                      attrs: { type: "text", placeholder: "Username" },
+                      domProps: { value: _vm.formData.username },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
                           }
-                        ],
-                        staticClass: "form-control form-control-lg",
-                        attrs: { type: "password", placeholder: "Password" },
-                        domProps: { value: _vm.password },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.password = $event.target.value
-                          }
+                          _vm.$set(
+                            _vm.formData,
+                            "username",
+                            $event.target.value
+                          )
                         }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _vm._m(1),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary btn-block",
-                        attrs: { type: "submit" }
-                      },
-                      [_vm._v(" Login ")]
-                    )
+                      }
+                    })
                   ]),
                   _vm._v(" "),
-                  _vm._m(2)
+                  _c("div", { staticClass: "form-group input-rounded" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.formData.password,
+                          expression: "formData.password"
+                        }
+                      ],
+                      staticClass: "form-control form-control-lg",
+                      attrs: { type: "password", placeholder: "Password" },
+                      domProps: { value: _vm.formData.password },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.formData,
+                            "password",
+                            $event.target.value
+                          )
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary btn-block",
+                      attrs: { type: "submit" }
+                    },
+                    [_vm._v(" Login ")]
+                  )
                 ]
               )
             ])
@@ -35787,7 +35784,7 @@ var render = function() {
       ])
     ]),
     _vm._v(" "),
-    _vm._m(3)
+    _vm._m(2)
   ])
 }
 var staticRenderFns = [
@@ -35807,27 +35804,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-inline" }, [
-      _c("div", { staticClass: "checkbox" }, [
-        _c("label", [
-          _c("input", {
-            staticClass: "form-check-input",
-            attrs: { type: "checkbox" }
-          }),
-          _vm._v("Remember me "),
-          _c("i", { staticClass: "input-frame" })
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "signup-link" }, [
-      _c("p", [_vm._v("Don't have an account yet?")]),
-      _vm._v(" "),
-      _c("a", { attrs: { href: "#" } }, [_vm._v("Sign Up")])
+    return _c("div", { staticClass: "grid-title text-center mt-5" }, [
+      _c("h4", [_vm._v("WELCOME BACK")])
     ])
   },
   function() {
@@ -35836,7 +35814,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "auth_footer" }, [
       _c("p", { staticClass: "text-muted text-center" }, [
-        _vm._v("© Label Inc 2019")
+        _vm._v("Copyright ©  www.fashion.com")
       ])
     ])
   }

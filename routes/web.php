@@ -34,3 +34,7 @@ Route::domain( env('USER_SERVER') )->group(function () {
     
 });
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
