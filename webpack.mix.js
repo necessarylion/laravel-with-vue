@@ -14,9 +14,12 @@ mix.webpackConfig({
     resolve: {
         extensions: ['.js', '.vue'],
         alias: {
-            '@': __dirname + '/resources/js'
+            '@admin': __dirname + '/resources/admin/js/',
+            '@user': __dirname + '/resources/user/js',
         }
     }
 })
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mix.js('resources/admin/js/app.js', 'public/admin/js')
+    .sass('resources/admin/sass/app.scss', 'public/admin/css')
+    .js('resources/user/js/app.js', 'public/user/js')
+    .sass('resources/user/sass/app.scss', 'public/user/css');

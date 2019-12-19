@@ -11,19 +11,26 @@
 |
 */
 
+Route::domain( env('ADMIN_SERVER') )->group(function () {
 
-
-
-Route::any('/test',function() { 
+    Route::get('/{all}', function () {
+        return view('admin');
+    })->where('all', '.*')->name('404');
+    Route::get('/{all}',function () {
+        return view('admin');
+    })->where('all', '.*')->name('505');
     
-    return 'this is test'; 
 });
 
+Route::domain( env('USER_SERVER') )->group(function () {
 
-Route::get('/{all}',function () {
-    return view('app');
-})->where('all', '.*')->name('404');;
+    Route::get('/{all}',function () {
+        return view('app');
+    })->where('all', '.*')->name('404');
+    
+    Route::get('/{all}',function () {
+        return view('app');
+    })->where('all', '.*')->name('505');
+    
+});
 
-Route::get('/{all}',function () {
-    return view('app');
-})->where('all', '.*')->name('505');
